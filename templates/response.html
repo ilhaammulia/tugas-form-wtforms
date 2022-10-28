@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Form dengan WTForms</title>
+</head>
+<body>
+  <h2>Contoh Form dengan WTForms</h2>
+  <p>Data yang dikirim adalah:</p>
+  <p>
+    Nama: {{ nama }} <br />
+    Alamat: {{ alamat }} <br />
+    Jenis Kelamin:
+    {% if jenisKelamin == 'P' %}
+      Pria
+    {% else %}
+      Wanita
+    {% endif %}
+    <br />
+    Agama:
+    {% if agama == 1 %}
+      Islam
+    {% elif agama == 2 %}
+      Protestan
+    {% elif agama == 3 %}
+      Katolik
+    {% elif agama == 4 %}
+      Hindu
+    {% else %}
+      Budha
+    {% endif %}
+    <br />
+    Hobi:
+    {% if hobi1 == true %}
+      Olahraga
+    {% endif %}
+    {% if hobi2 == true %}
+      Membaca
+    {% endif %}
+    {% if hobi3 == true %}
+      Jalan-Jalan
+    {% endif %}
+  </p>
+</body>
+</html>

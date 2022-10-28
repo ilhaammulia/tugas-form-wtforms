@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Form dengan WTForms</title>
+</head>
+<body>
+  <h2>Contoh Form dengan WTForms</h2>
+  <form method="post">
+    {{ form.nama.label }} <br />
+    {{ form.nama() }} <br />
+    {{ form.alamat.label }} <br />
+    {{ form.alamat() }} <br />
+    {{ form.jenisKelamin.label }} <br />
+    {{ form.jenisKelamin() }} <br />
+    {{ form.agama.label }} <br />
+    {{ form.agama() }} <br />
+    Hobi: <br />
+    {{ form.hobi1() }} {{ form.hobi1.label }}
+    {{ form.hobi2() }} {{ form.hobi2.label }}
+    {{ form.hobi3() }} {{ form.hobi3.label }} <br />
+    <p>{{ form.submit() }}</p>
+  </form>
+</body>
+</html>
